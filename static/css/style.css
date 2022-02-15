@@ -68,3 +68,7 @@ nav {
 	border: 1px solid #3e2723;
 	color: #3e2723;
 }
+
+.social-links {
+	float: center;
+}

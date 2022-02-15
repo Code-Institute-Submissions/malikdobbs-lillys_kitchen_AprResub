@@ -41,6 +41,7 @@
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 	</header>
+
 	{% block content %}
 	{% endblock %}
 
@@ -50,5 +51,16 @@
 	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	{% block scripts %}
     {% endblock %}
+	<br>
+	<hr>
+	<footer>
+		<div class="container lillys-intro">
+			<div class="row">
+				<div class="center-align">
+					<p class="copyright text-muted">Copyright &copy; Lilly's Kitchen <span id="copyright"></span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
