@@ -9,11 +9,43 @@ body {
 	height: 90vh;
 }
 
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.welcome-message {
+	position: relative;
+    padding-top: 4em;
+    color: #fffff0;
+	font-family: 'Courgette', cursive;
+}
+
+.sign-up-message {
+	position: relative;
+    padding-top: 1.5em;
+    color: #fffff0;
+	font-family: 'Lato', sans-serif;
+}
+
 /* Text font for Nav bar logo  */
-nav h1 {
+nav {
+	color: #fffff0;
 	font-family: 'Courgette', cursive;
 }
 
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.join-now {
+	color: #fffff0;
+}
+
+.join-now:hover {
+	color: black;
+	text-decoration: underline;
 }
