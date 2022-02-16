@@ -24,14 +24,14 @@ body {
 
 .welcome-message {
 	position: relative;
-    padding-top: 4em;
+    padding-top: 7em;
     color: #fffff0;
 	font-family: 'Courgette', cursive;
 }
 
 .sign-up-message {
 	position: relative;
-    padding-top: 1.5em;
+    padding-top: .5em;
     color: #fffff0;
 	font-family: 'Lato', sans-serif;
 }
@@ -74,19 +74,23 @@ nav {
 	font-family: 'Courgette', cursive;
 }
 
+.lilly-header {
+	margin: 0;
+	padding-left: .25em;
+}
+
 .social-links {
-	float: center;
+	font-size: 1.5em;
+	margin: 0.25em;
+	padding: 0.15em;
+
+    color: #fffff0;
 }
 
 /* Recipe card and images */
 .recipe-img {
-	width:  250px;
     height: 325px;
-    object-fit: cover;
-}
-
-.recipe-card-panel {
-	padding: 4.5em;
+    object-fit: fill;
 }
 
 .recipe-card {
