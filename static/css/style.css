@@ -51,7 +51,7 @@ nav {
 }
 
 .join-now:hover {
-	color: black;
+	color: #fffff0;
 	text-decoration: underline;
 }
 
@@ -81,10 +81,10 @@ nav {
     object-fit: cover;
 }
 
-.card-panel {
+.recipe-card-panel {
 	padding: 4.5em;
 }
 
-.card {
+.recipe-card {
 	border-radius: 2.5em;
 }
