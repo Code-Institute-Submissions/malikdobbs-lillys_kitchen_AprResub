@@ -6,6 +6,7 @@ body {
 	background-color: #3e2723;
 }
 
+/* Index hero image */
 .hero-image {
 	background: url("https://www.mychicagosteak.com/steak-university/wp-content/uploads/2017/03/400474_TBone-Steak-Fired-Up.jpg") no-repeat center center;
 	background-size: cover;
@@ -33,10 +34,6 @@ body {
     padding-top: 1.5em;
     color: #fffff0;
 	font-family: 'Lato', sans-serif;
-}
-
-.lillys-intro {
-	color: #fffff0;
 }
 
 /* Text font for Nav bar logo  */
@@ -69,6 +66,25 @@ nav {
 	color: #3e2723;
 }
 
+.lillys-intro {
+	color: #fffff0;
+}
+
 .social-links {
 	float: center;
+}
+
+/* Recipe card and images */
+.recipe-img {
+	width:  250px;
+    height: 325px;
+    object-fit: cover;
+}
+
+.card-panel {
+	padding: 4.5em;
+}
+
+.card {
+	border-radius: 2.5em;
 }

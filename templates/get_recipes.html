@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section>
+	<h4 class="center-align lillys-intro">All Recipes</h4>
+	<div class="row card-panel transparent">
+		{% for recipe in recipes %}
+		{% if loop.index % 2 != 0 %}
+		<div class="col s12 m4">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator recipe-img" src="{{ recipe.image }}" alt="food-image">
+					<span class="card-title text-shadow">
+						<br>
+						<strong>{{ recipe.recipe_name }}</strong>
+					</span>
+				</div>
+				<div class="card-content">
+					<span class="card-title activator">
+						<i class="fa-solid fa-arrow-up-right-from-square left"></i>Click to view recipe</span>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title">
+						<strong>{{ recipe.recipe_name }}</strong>
+						<i class="fa-solid fa-xmark right"></i></span>
+					<p><b>Preparation Time : </b> {{ recipe.prep_time }} </p>
+					<p><b>Cooking Time : </b> {{ recipe.cook_time }} </p>
+					<p><b>Description : </b> {{ recipe.recipe_description }} </p>
+					<p><b>Step 1 : </b> {{ recipe.method_1 }} </p>
+					<p><b>Step 2 : </b> {{ recipe.method_2 }} </p>
+					<p><b>Step 3 : </b> {{ recipe.method_3 }} </p>
+					<p><b>Step 4 : </b> {{ recipe.method_4 }} </p>
+					<p><b>Step 5 : </b> {{ recipe.method_5 }} </p>
+				</div>
+			</div>
+		</div>
+		{% else %}
+		<div class="col s12 m4">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator recipe-img" src="{{ recipe.image }}" alt="food-image">
+					<span class="card-title text-shadow">
+						<br>
+						<strong>{{ recipe.recipe_name }}</strong>
+					</span>
+				</div>
+				<div class="card-content">
+					<span class="card-title activator">
+						<i class="fa-solid fa-arrow-up-right-from-square left"></i>Click to view recipe</span>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title">
+						<strong>{{ recipe.recipe_name }}</strong>
+						<i class="fa-solid fa-xmark right"></i></span>
+					<p><b>Preparation Time : </b> {{ recipe.prep_time }} </p>
+					<p><b>Cooking Time : </b> {{ recipe.cook_time }} </p>
+					<p><b>Description : </b> {{ recipe.recipe_description }} </p>
+					<p><b>Step 1 : </b> {{ recipe.method_1 }} </p>
+					<p><b>Step 2 : </b> {{ recipe.method_2 }} </p>
+					<p><b>Step 3 : </b> {{ recipe.method_3 }} </p>
+					<p><b>Step 4 : </b> {{ recipe.method_4 }} </p>
+					<p><b>Step 5 : </b> {{ recipe.method_5 }} </p>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</section>
+
+{% endblock %}
