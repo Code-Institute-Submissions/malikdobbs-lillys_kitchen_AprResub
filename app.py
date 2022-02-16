@@ -1,12 +1,12 @@
 import os
 from flask import (
-	Flask, flash, render_template, 
-	redirect, request, session, url_for)
+    Flask, flash, render_template, 
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
-	import env
+    import env
 
 
 app = Flask(__name__)
@@ -21,17 +21,26 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/index")
 def index():
-	return render_template("index.html")
+    """
+    This is the index route.
+    """
+    return render_template("index.html")
 
 
 @app.route("/recipes")
 def get_recipes():
-	recipes = list(mongo.db.recipes.find())
-	return render_template("get_recipes.html", recipes=recipes)
+    """
+    Placeholder
+    """
+    recipes = list(mongo.db.recipes.find())
+    return render_template("get_recipes.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Placeholder
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -50,11 +59,16 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
+        return redirect(url_for("profile", username=session["user"]))
+
     return render_template("register.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Placeholder
+    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -84,13 +98,31 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+    Placeholder
+    """
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    """
+    Placeholder
+    """
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
-	app.run(host=os.environ.get("IP"),
-			port=int(os.environ.get("PORT")),
-			debug=True)
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")),
+            debug=True)
