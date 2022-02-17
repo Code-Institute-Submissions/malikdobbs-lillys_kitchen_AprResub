@@ -1,6 +1,120 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h4 class="center-align lillys-intro lilly-heading">All Recipes</h4>
+<h4 class="center-align lillys-intro lilly-heading">Add Your Own Recipes</h4>
+<br>
+<main class="container">
+<div class="row card-panel">
+    <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+        <!-- Recipe Name -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-utensils prefix brown-text text-darken-4"></i>
+                <input id="recipe_name"name="recipe_name" minlength="5" maxlength="50" 
+                    type="text" class="validate" required>
+                <label for="recipe_name">Recipe Name</label>
+            </div>
+        </div>
+        <!-- Prep Time -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-clock prefix brown-text text-darken-4"></i>
+                <textarea id="prep_time" name="prep_time" minlength="5" 
+                      maxlength="50" class="materialize-textarea" required></textarea>
+                <label for="prep_time">Prep Time</label>
+            </div>
+        </div>
+         <!-- Cook Time -->
+         <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-fire prefix brown-text text-darken-4"></i>
+                <textarea id="cook_time" name="cook_time" minlength="5" 
+                      maxlength="50" class="materialize-textarea" required></textarea>
+                <label for="cook_time">Cook Time</label>
+            </div>
+        </div>
+         <!-- Servings -->
+         <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-user prefix brown-text text-darken-4"></i>
+                <textarea id="serves" name="serves" minlength="5" 
+                      maxlength="50" class="materialize-textarea" required></textarea>
+                <label for="serves">Serves</label>
+            </div>
+        </div>
+        <!-- Recipe Description -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-pen prefix brown-text text-darken-4"></i>
+                <textarea id="recipe_description" name="recipe_description" minlength="5" 
+                      maxlength="50" class="materialize-textarea" required></textarea>
+                <label for="recipe_description">Recipe Description</label>
+            </div>
+        </div>
+        <!-- Image URL -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-camera prefix brown-text text-darken-4"></i>
+                <textarea id="image" name="image" minlength="5" 
+                      maxlength="50" class="materialize-textarea" required></textarea>
+                <label for="image">Add Image link:</label>
+            </div>
+        </div>
+        <!-- Method 1 -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-1 prefix brown-text text-darken-4"></i>
+                <textarea id="method_1" name="method_1" minlength="5" 
+                      maxlength="500" class="materialize-textarea" required></textarea>
+                <label for="method_1">Step 1</label>
+            </div>
+        </div>
+        <!-- Method 2 -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-2 prefix brown-text text-darken-4"></i>
+                <textarea id="method_2" name="method_2" minlength="5" 
+                      maxlength="500" class="materialize-textarea" required></textarea>
+                <label for="method_2">Step 2</label>
+            </div>
+        </div>
+        <!-- Method 3 -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-3 prefix brown-text text-darken-4"></i>
+                <textarea id="method_3" name="method_3" minlength="5" 
+                      maxlength="500" class="materialize-textarea" required></textarea>
+                <label for="method_3">Step 3</label>
+            </div>
+        </div>
+        <!--Method 4 -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-4 prefix brown-text text-darken-4"></i>
+                <textarea id="method_4" name="method_4" minlength="5" 
+                      maxlength="500" class="materialize-textarea" required></textarea>
+                <label for="method_4">Step 4</label>
+            </div>
+        </div>
+        <!-- Method 5 -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-5 prefix brown-text text-darken-4"></i>
+                <textarea id="method_5" name="method_5" minlength="5" 
+                      maxlength="500" class="materialize-textarea" required></textarea>
+                <label for="method_5">Step 5</label>
+            </div>
+        </div>
+          <!-- Submit button-->
+          <div class="row">
+              <div class="col s12 center-align">
+                  <button type="submit" class="btn-large register-btn">
+                      Add Recipe <i class="fas fa-plus-square right"></i>
+                  </button>
+              </div>
+          </div>
+    </form>
+</div>
+</main>
 
 {% endblock %}
