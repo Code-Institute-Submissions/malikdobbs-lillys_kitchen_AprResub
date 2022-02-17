@@ -55,15 +55,27 @@ nav {
 	text-decoration: underline;
 }
 
-.btn-large {
+.btn-large, .btn-small {
     border: 1px solid #fffff0;
     background-color: #3e2723;
 }
 
-.btn-large:hover {
+.btn-large, .btn-small:hover {
 	background-color: #fffff0;
 	border: 1px solid #3e2723;
 	color: #3e2723;
+}
+
+.cancel-btn {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+}
+
+.cancel-btn:hover {
+	background-color: #3e2723;
+	border: 1px solid #fffff0;
+	color: #fffff0;
 }
 
 .lillys-intro {

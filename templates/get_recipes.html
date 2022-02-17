@@ -18,7 +18,12 @@
 					</div>
 					<div class="card-content">
 						<span class="card-title activator">
-							<i class="fa-solid fa-arrow-up-right-from-square left"></i>Click to view recipe</span>
+							<i class="fa-solid fa-arrow-up-right-from-square left"></i>Click to view recipe
+							{% if session.user|lower == recipe.created_by|lower %}
+							<a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small">Edit</a>
+							{% endif %}
+						</span>
+							
 					</div>
 					<div class="card-reveal">
 						<span class="card-title">
@@ -32,7 +37,7 @@
 						<p><b>Step 3 : </b> {{ recipe.method_3 }} </p>
 						<p><b>Step 4 : </b> {{ recipe.method_4 }} </p>
 						<p><b>Step 5 : </b> {{ recipe.method_5 }} </p>
-						<p> <em>by: {{ recipe.created_by }}</em> </p>
+						<p><em>by: {{ recipe.created_by }}</em></p>
 					</div>
 				</div>
 			</div>
@@ -62,6 +67,7 @@
 						<p><b>Step 3 : </b> {{ recipe.method_3 }} </p>
 						<p><b>Step 4 : </b> {{ recipe.method_4 }} </p>
 						<p><b>Step 5 : </b> {{ recipe.method_5 }} </p>
+						<p><em>by: {{ recipe.created_by }}</em></p>
 					</div>
 				</div>
 			</div>

@@ -77,12 +77,12 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                    existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(
+                        request.form.get("username")))
+                    return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -124,6 +124,9 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """
+    Placeholder
+    """
     if request.method == "POST":
         recipes = {
             "recipe_name": request.form.get("recipe_name"),
@@ -144,6 +147,33 @@ def add_recipe():
         return redirect(url_for("get_recipes"))
 
     return render_template("add_recipe.html")
+
+
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    """
+    Placeholder
+    """
+    if request.method == "POST":
+        submit = {
+            "recipe_name": request.form.get("recipe_name"),
+            "prep_time": request.form.get("prep_time"),
+            "cook_time": request.form.get("cook_time"),
+            "serves": request.form.get("serves"),
+            "recipe_description": request.form.get("recipe_description"),
+            "image": request.form.get("image"),
+            "method_1": request.form.get("method_1"),
+            "method_2": request.form.get("method_2"),
+            "method_3": request.form.get("method_3"),
+            "method_4": request.form.get("method_4"),
+            "method_5": request.form.get("method_5"),
+            "created_by": session["user"]
+        }
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
+        flash("Recipe Successfully Updated")
+
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=recipe)
 
 
 if __name__ == "__main__":
