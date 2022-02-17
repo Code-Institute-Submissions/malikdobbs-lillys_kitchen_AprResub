@@ -89,7 +89,7 @@ nav {
 
 /* Recipe card and images */
 .recipe-img {
-    height: 325px;
+    height: 250px;
     object-fit: fill;
 }
 
