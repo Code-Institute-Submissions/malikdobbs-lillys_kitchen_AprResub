@@ -50,20 +50,14 @@ nav {
 	color: #fffff0;
 }
 
-.join-now:hover {
-	color: #fffff0;
-	text-decoration: underline;
-}
-
-.btn-large, .btn-small {
+.btn-large {
     border: 1px solid #fffff0;
     background-color: #3e2723;
 }
 
-.btn-large, .btn-small:hover {
-	background-color: #fffff0;
-	border: 1px solid #3e2723;
-	color: #3e2723;
+.edit-btn {
+	border: 1px solid #fffff0;
+    background-color: #3e2723;
 }
 
 .cancel-btn {
@@ -72,7 +66,36 @@ nav {
 	color: #3e2723;
 }
 
+.delete-btn {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+}
+
+.join-now:hover {
+	color: #fffff0;
+	text-decoration: underline;
+}
+
+.btn-large:hover {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+}
+
+.edit-btn:hover {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+}
+
 .cancel-btn:hover {
+	background-color: #3e2723;
+	border: 1px solid #fffff0;
+	color: #fffff0;
+}
+
+.delete-btn:hover {
 	background-color: #3e2723;
 	border: 1px solid #fffff0;
 	color: #fffff0;
