@@ -42,6 +42,17 @@
                 <label for="serves">Serves</label>
             </div>
         </div>
+           <!-- Ingredients -->
+           <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-user prefix brown-text text-darken-4"></i>
+                <textarea id="ingredients" name="ingredients" minlength="5" 
+                    maxlength="500" class="materialize-textarea" required>
+                    {{- recipe.ingredients -}}
+                </textarea>
+                <label for="ingredients">Ingredients</label>
+            </div>
+        </div>
         <!-- Recipe Description -->
         <div class="row">
             <div class="input-field col s12">
