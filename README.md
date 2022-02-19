@@ -152,4 +152,4 @@ If the user is not logged into the website the links visible to them will show a
 
 ## Credits
 
-* [Steak and Chips recipe] (https://properfoodie.com/steak-and-chips/)
+* [Steak and Chips recipe](https://properfoodie.com/steak-and-chips/)
