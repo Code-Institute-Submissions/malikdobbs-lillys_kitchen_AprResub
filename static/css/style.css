@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap');
 
 /* Text font for all elements in body tag */
+
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #3e2723;
 }
 
 /* Index hero image */
+
 .hero-image {
 	background: url("https://www.mychicagosteak.com/steak-university/wp-content/uploads/2017/03/400474_TBone-Steak-Fired-Up.jpg") no-repeat center center;
 	background-size: cover;
@@ -37,6 +39,7 @@ body {
 }
 
 /* Text font for Nav bar logo  */
+
 nav {
 	color: #fffff0;
 	font-family: 'Courgette', cursive;
@@ -49,6 +52,8 @@ nav {
 .join-now {
 	color: #fffff0;
 }
+
+/* buttons */
 
 .btn-large {
     border: 1px solid #fffff0;
@@ -130,6 +135,8 @@ nav {
 	color: #fffff0;
 }
 
+/* Lillys kitchen header font and colour */
+
 .lillys-intro {
 	color: #fffff0;
 }
@@ -143,6 +150,8 @@ nav {
 	padding-left: .25em;
 }
 
+/* Social media footer links */
+
 .social-links {
 	font-size: 1.5em;
 	margin: 0.25em;
@@ -152,6 +161,7 @@ nav {
 }
 
 /* Recipe card and images */
+
 .recipe-img {
     height: 250px;
     object-fit: fill;
@@ -159,4 +169,44 @@ nav {
 
 .profile-card {
 	background-color: #3e2723;
+}
+
+.card .card-content {
+	height: 7.25rem;
+	padding: 1rem;
+}
+
+/* Media queries */
+
+@media (max-width: 360px) {
+	.lilly-header {
+		margin: 1rem;
+		font-size: 1.85rem;
+	}
+
+	nav {
+		min-height: 70px;
+	}
+}
+
+@media (max-width: 376px) {
+	.card .card-content {
+		padding: .5rem;
+	}
+}
+
+@media (max-width: 775px) {
+	.search-query {
+		padding: 0;
+		margin: 0;
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 1441px) {
+	.edit-btn, .delete-btn {
+		max-height: 1.4em;
+		line-height: 1.2em;
+		font-size: .55em;
+	}
 }
