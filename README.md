@@ -59,20 +59,20 @@ Find below links for my wireframes, showing how i planned for my web pages to be
 The Wireframes have been creating using balsamiq:
 
 * Index Page
-* ()
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Home-Page.png)
 
 * Log In Page
-* ()
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Log-In-Page.png)
 
-* Sign Up Page
-* ()
+* Register Page
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Register-Page.png)
 
 * Recipes Page
-* ()
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Recipes-Page.png)
 
 * Add Recipes Page
-* ()
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Add-Recipe-Page.png)
 
 * Edit Recipes Page
-* ()
+* (https://github.com/malikdobbs/lillys_kitchen/blob/main/static/images/Edit-Recipe-Page.png)
 
