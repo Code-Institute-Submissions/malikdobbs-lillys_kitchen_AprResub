@@ -21,6 +21,7 @@
 				</div>
 			</form>
 		</div>
+		{% if recipes|length > 0 %}
 		<div class="row card-panel transparent">
 			{% for recipe in recipes %}
 			{% if loop.index % 2 != 0 %}
@@ -100,6 +101,9 @@
 			{% endif %}
 			{% endfor %}
 		</div>
+		{% else %}
+		<h4 class="center-align lillys-intro lilly-heading">No Recipes Found</h4>
+		{% endif %}
 	</div>
 </section>
 
