@@ -1,7 +1,7 @@
 # Lilly's Kitchen
 [View the live project here](https://lillys-kitchen.herokuapp.com/index)
 
-[View the repo in GitHub]()
+[View the repo in GitHub](https://github.com/malikdobbs/lillys_kitchen)
 
 * This is the promotional website for Lilly's Kitchen. Liily's Kitchen is a recipe finder website where users can find recipes created by other users and create their own to share with there friends, family and our online community. 
 
@@ -113,30 +113,30 @@ If the user is not logged into the website the links visible to them will show a
 
 ### Langugages
 
-* HTML 
-* CSS 
-* JavaScript
-* Python
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CS)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
 ### Frameworks and Libraries
 
-* Flask - framework used in Python
-* Jinja - templating language used in Python for advanced routing
-* Materialize - used to add responsiveness and styling elements from the Materialize framework
-* Font Awesome - used to add icons on specific elements throughout webpage
-* Google Fonts - used to style fonts for the typography on the website
-* JQuery - used for DOM manipulation on navbar element and copyright formatting
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - framework used in Python
+* [Jinja](https://palletsprojects.com/p/jinja/) - templating language used in Python for advanced routing
+* [Materialize](https://materializecss.com/) - used to add responsiveness and styling elements from the Materialize framework
+* [Font Awesome](https://fontawesome.com/) - used to add icons on specific elements throughout webpage
+* [Google Fonts](https://fonts.google.com/) - used to style fonts for the typography on the website
+* [JQuery](https://jquery.com/) - used for DOM manipulation on navbar element and copyright formatting
 
 ### Database system
 
-* MongoDB
+* [MongoDB](https://www.mongodb.com/)
 
 ### Other technologies
 
-* GitHub
-* Git
-* Heroku
-* Balsamiq
+* [GitHub](https://github.com/)
+* [Git](https://git-scm.com/)
+* [Heroku](https://dashboard.heroku.com/)
+* [Balsamiq](https://balsamiq.com/)
 
 ## Testing
 
