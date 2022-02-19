@@ -58,6 +58,9 @@ nav {
 .edit-btn {
 	border: 1px solid #fffff0;
     background-color: #3e2723;
+	max-height: 1.4em;
+	line-height: 1.2em;
+	font-size: .65em;
 }
 
 .cancel-btn {
@@ -67,6 +70,20 @@ nav {
 }
 
 .delete-btn {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+	max-height: 1.4em;
+	line-height: 1.2em;
+	font-size: .65em;
+}
+
+.search-btn {
+	border: 1px solid #fffff0;
+    background-color: #3e2723;
+}
+
+.reset-btn {
 	background-color: #fffff0;
 	border: 1px solid #3e2723;
 	color: #3e2723;
@@ -96,6 +113,18 @@ nav {
 }
 
 .delete-btn:hover {
+	background-color: #3e2723;
+	border: 1px solid #fffff0;
+	color: #fffff0;
+}
+
+.search-btn:hover {
+	background-color: #fffff0;
+	border: 1px solid #3e2723;
+	color: #3e2723;
+}
+
+.reset-btn:hover {
 	background-color: #3e2723;
 	border: 1px solid #fffff0;
 	color: #fffff0;
