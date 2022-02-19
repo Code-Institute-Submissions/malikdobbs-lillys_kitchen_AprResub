@@ -152,4 +152,27 @@ If the user is not logged into the website the links visible to them will show a
 
 ## Credits
 
+The recipes used on Lilly's Kitchen has come from multiple different sources as referenced below:
 * [Steak and Chips recipe](https://properfoodie.com/steak-and-chips/)
+* [Jerk Chicken recipe](https://www.bbcgoodfood.com/recipes/jerk-chicken-rice-peas)
+* [Shrimp Alfredo recipe](https://natashaskitchen.com/creamy-shrimp-alfredo-pasta-recipe/)
+* [Sweet Potato Pie](https://www.allrecipes.com/recipe/12142/sweet-potato-pie-i/)
+* [Korean Fried Wings](https://www.cakenknife.com/crispy-korean-bbq-chicken-wings/)
+* [Fish and Chips](https://www.thespruceeats.com/best-fish-and-chips-recipe-434856)
+* [Salmon and Sweet Potato Mash](https://www.bbcgoodfood.com/recipes/sesame-salmon-purple-sprouting-broccoli-sweet-potato-mash)
+* [Chicken Madras](https://www.bbcgoodfood.com/recipes/chicken-madras)
+* [New York Cheesecake](https://www.bbcgoodfood.com/recipes/new-york-cheesecake)
+* [Pancakes](https://www.bbc.co.uk/food/recipes/fluffyamericanpancak_74828)
+
+* Code Institute Task Manager App - Helped me to create the foundation of Lilly's Kitchen
+* Code Institue Thorin & Co App - Helped me loop through the cards on how to display recipe card and images on screen
+
+## Media
+
+* Images used for recipes were taken Google Images
+
+## Acknowledgement
+
+* My mentor, Gerard McBride for continous support, help and advice when necessary
+* Code Institue - Task Manager walkthrough project
+* Code Institue - Thorin & Co walkthrough project
