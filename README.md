@@ -49,3 +49,30 @@ Lilly's Kitchen is centered around the CRUD (create, read, update and delete) fu
 * Recipes will be stored in the app on the recipes page for all users to view
 * Users will be able to search for recipes via either the name of a recipe or key words from the description of the recipe
 * Users will be able to edit or delete recipes they have created via simple and easy to use buttons on the recipes page
+
+## Skeleton
+
+Find below links for my wireframes, showing how i planned for my web pages to be structured and layout on different device sizes such as laptop, tablet and mobile:
+
+## Wireframes
+
+The Wireframes have been creating using balsamiq:
+
+* Index Page
+* ()
+
+* Log In Page
+* ()
+
+* Sign Up Page
+* ()
+
+* Recipes Page
+* ()
+
+* Add Recipes Page
+* ()
+
+* Edit Recipes Page
+* ()
+
