@@ -5,6 +5,7 @@
 	<div class="container">
 		<h4 class="center-align lillys-intro lilly-heading">All Recipes</h4>
 		<div class="row card-panel transparent search-query">
+			<!-- Search recipe query -->
 			<form action="{{ url_for('search') }}" method="post" class="col s12">
 				<div class="row valign-wrapper center-align">
 					<div class="input-field col s12 m8">
@@ -25,6 +26,7 @@
 		<div class="row card-panel transparent">
 			{% for recipe in recipes %}
 			{% if loop.index % 2 != 0 %}
+			<!-- Recipe 1 of 2 for each line-->
 			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
@@ -62,6 +64,7 @@
 				</div>
 			</div>
 			{% else %}
+			<!-- Recipe 2 of 2 for each line-->
 			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
@@ -102,6 +105,7 @@
 			{% endfor %}
 		</div>
 		{% else %}
+		<!-- Message advising user no results found from search query -->
 		<h4 class="center-align lillys-intro lilly-heading">No Recipes Found</h4>
 		{% endif %}
 	</div>

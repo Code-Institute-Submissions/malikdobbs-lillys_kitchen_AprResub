@@ -44,7 +44,7 @@ def get_recipes():
 def search():
     """
     Allows you to search the db
-    and will display recipes found in 
+    and will display recipes found in
     db
     """
     query = request.form.get("query")
@@ -58,7 +58,7 @@ def register():
     Allows users to create new
     account. It will check db to see
     if user exists before registering
-    user. If no account is found new 
+    user. If no account is found new
     user will be created on db
     """
     if request.method == "POST":
@@ -87,7 +87,7 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """
-    Log's in user after checking 
+    Log's in user after checking
     username and password. If username,
     password doesn't exist or incorrect
     will ask user to try log in again
@@ -151,8 +151,8 @@ def logout():
 def add_recipe():
     """
     Allows registered users to create
-    and upload there own recipe to db 
-    and website if logged in 
+    and upload there own recipe to db
+    and website if logged in
     """
     if request.method == "POST":
         recipes = {
@@ -181,7 +181,7 @@ def add_recipe():
 def edit_recipe(recipe_id):
     """
     Allows registered users to edit
-    recipes they've created themselves 
+    recipes they've created themselves
     """
     if request.method == "POST":
         submit = {
@@ -211,7 +211,7 @@ def edit_recipe(recipe_id):
 def delete_recipe(recipe_id):
     """
     Allows registered users to delete
-    recipes they've created themselves 
+    recipes they've created themselves
     """
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
