@@ -150,6 +150,69 @@ If the user is not logged into the website the links visible to them will show a
 * The website has been viewed on Google Chrome, Safari and Firefox
 * Friends and family tested the website on their phones, tablets and laptops and did not inform me of any issues regarding bugs or issues with the website
 
+## Deployment
+
+### Local Deployment
+
+1. To clone this repository, copy and paste the following code into your terminal:
+gh repo clone malikdobbs/lillys_kitchen
+2. In the terminal window change directory (CD) to the correct file location (directory you created for your own repository)
+3. Create your environment variables:
+  * Create env.py file in the root directory
+  * At the top of the env.py file add "import os"
+  * In the env.py file set the connection to your MongoDB(MONGO_URI) database and a SECRET_KEY using the following syntax:
+`os.environ.setdefault["MONGO_URI", "mongodb+srv":("enter your username and password here"]`
+`os.environ.setdefault["SECRET_KEY"] = "Enter your Secret Key here"`
+4. Install all requirements from the requirements.txt file by entering the following syntax into your terminal:
+  * pip3 install -r requirements.txt
+5. Create a new Database in MongoDB Atlas called "recipe_finder" 
+* (if you dont have an account, sign up and create an account)
+6. In "recipe_finder" Database create the following 2 collections:
+* Recipes:
+ `_id : <ObjectId>`,
+ `recipe_name : <string>`,
+ `prep_time : <string>`,
+ `cook_time : <string>`,
+ `serves : <string>`,
+ `ingredients : <string>`,
+ `recipe_description : <string>`,
+ `image : <string>`,
+ `method_1 : <string>`,
+ `method_2 : <string>`,
+ `method_3 : <string>`,
+ `method_4 : <string>`,
+ `method_5 : <string>`,
+ `created_by : <string>`
+* Users:
+ `_id : <ObjectId>`,
+ `username : <string>`,
+ `password : <string>`
+7. In the last line of app.py change `debug=False` to `debug=True`
+8. To run the application type the following command in your terminal:
+ `python3 app.py`
+
+### Heroku Deployment
+
+1. Create a requirement.txt file, which contains a list of dependencies. In the terminal type the following command:
+  `pip3 freeze --local > requirements.txt`
+2. Create a Procfile, which tells Heroku how to run the project. In the terminal type the following command:
+  `echo web: python run.py > Procfile
+3. `git add/commit and push` these files to GitHub
+4. Create a new app in Heroku
+5. Using the Heroku dashboard link your Heroku app to your GitHub repository by following these steps:
+  * Select the "Deploy" tab, scroll down to "Deployment method" and choose the GitHub icon
+  * Scroll down to "App connected to GitHub", then find and select your repository
+6. Select the settings tab and scroll down to "Reveal Config Vars" and set the following config vars:
+  * IP: 0.0.0.0
+  * PORT: 5000
+  * MONGO_URI: `<link to your MongoDB database>`
+  * SECRET_KEY: `<your secret key>
+  * MONGO_DBNAME: `<your collection name>`
+  * DEBUG: FALSE
+7. Enable "Automatic deploys"
+8. Scroll down to "Manual deployment" and click "Deploy branch"
+9. The app will be deployed. Click "Open app" to view the app
+
 ## Credits
 
 The recipes used on Lilly's Kitchen has come from multiple different sources as referenced below:
@@ -166,6 +229,8 @@ The recipes used on Lilly's Kitchen has come from multiple different sources as 
 
 * Code Institute Task Manager App - Helped me to create the foundation of Lilly's Kitchen
 * Code Institue Thorin & Co App - Helped me loop through the cards on how to display recipe card and images on screen
+
+* Delete recipes button - Used W3Schools to help wire up delete recipes function (https://www.w3schools.com/python/python_mongodb_delete.asp)
 
 ## Media
 
